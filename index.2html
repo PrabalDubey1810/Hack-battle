@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style2.css">
+<body>
+
+<h2>Teacher Recommendation System </h2>
+<p>
+  <div>
+  <input type="name" Employee Id>
+  <button onclick="myFunction()">Submit</button>
+  </div>
+<script>
+function myFunction() {
+  location.replace("http://127.0.0.1:5500/index.html")
+}
+</script>
+
+</body>
+</html>
