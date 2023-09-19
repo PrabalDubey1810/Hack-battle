@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Teacher Recommendation System</h1>
+    <div id="teacher-list">
+        <!-- Teacher recommendations will be displayed here -->
+    </div>
+    <form id="feedback-form">
+        <label for="teacher name">Teacher name</label>
+        <input type="name" id="name">
+
+        <label for="subject">Subject name</label>
+        <input type="name" id="subject name">
+
+
+
+        <label for="teaching-skills">Teaching Skills:</label>
+        <input type="number" id="teaching-skills" min="1" max="5" required>
+        
+        <label for="awarding-marks">Awarding Good Marks (1 for No, 5 for Yes):</label>
+        <input type="number" id="awarding-marks" min="1" max="5" required>
+        
+        <label for="chill-nature">Chill in Nature (1 for No, 5 for Yes):</label>
+        <input type="number" id="chill-nature" min="1" max="5" required>
+        
+        <label for="student-feedback">Student Typed Feedback:</label>
+        <textarea id="student-feedback" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
