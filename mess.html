@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Mess Review</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <h1>Welcome to College Mess Review</h1>
+    <h2>Choose an option:</h2>
+    <button onclick="giveReview()">Give Review</button>
+    <button onclick="seeReview()">See Review</button>
+
+    <div id="reviewForm" style="display: none;">
+        <h2>Give Review</h2>
+        <form id="review">
+            <label for="Mess name">Mess Name:</label>
+            <select name=" Mess name:" id ="Mess">
+                <option value="PR VEG MESS">PR VEG MESS:</option>
+                <option value="PR SPECIAL MESS">PR SPECIAL MESS:</option>
+                <option value="DR SPECIAl MESS">DR SPECIAL MESS:</option>
+                <option value="DR NON_VEG MESS">DR NON_VEG MESS:</option>
+            </select>
+            
+            <label for="foodQuality">Food Quality:</label>
+            <input type="number" id="foodQuality" name="foodQuality" min="1" max="5"><br>
+
+            <label for="messHygiene">Mess Hygiene:</label>
+            <input type="number" id="messHygiene" name="messHygiene" min="1" max="5"><br>
+
+            <label for="staffFriendliness">Staff Friendliness:</label>
+            <input type="number" id="staffFriendliness" name="staffFriendliness" min="1" max="5"><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="reviewDisplay" style="display: none;">
+        <h2>Mess Reviews</h2>
+        <div id="reviewsList"></div>
+    </div>
+
+    <script src="mess.js"></script>
+</body>
+</html>
